@@ -1,8 +1,10 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <a class="navbar-brand" href="homePage.php">
             <img src="/user/templates/img/logo.png" alt="" class="navigation__logo h-20">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -60,13 +62,16 @@
 
 <script>
     function toggleMenu() {
-        var menu = document.getElementById('menu');
-        if (menu.style.display === 'block') {
-            menu.style.display = 'none';
-        } else {
-            menu.style.display = 'block';
-        }
+    var menu = document.getElementById('menu');
+    var menuStyle = window.getComputedStyle(menu);
+    var isMenuVisible = menuStyle.display !== 'none';
+
+    if (isMenuVisible) {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
     }
+}
 
     // Cập nhật số sản phẩm trong giỏ hàng
     function updateCartCount() {
@@ -77,6 +82,38 @@
         }
     }
     updateCartCount();
+
+
+   // Lấy phần tử nút toggle
+    var navbarToggler = document.querySelector('.navbar-toggler');
+
+    // Lấy phần tử menu collapse
+    var navbarCollapse = document.querySelector('#navbarNav');
+
+    // Khởi tạo đối tượng Collapse của Bootstrap
+    var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false // Đặt thành false để không tự động toggle khi khởi tạo
+    });
+
+    // Lắng nghe sự kiện click trên nút toggle
+    navbarToggler.addEventListener('click', function() {
+        // Toggle hiển thị/ẩn menu
+        bsCollapse.toggle();
+    });
+
+    // Lấy phần tử body
+var body = document.querySelector('body');
+
+// Lắng nghe sự kiện click trên phần tử body
+body.addEventListener('click', function(event) {
+    // Kiểm tra nếu đích click không phải là nút toggle hoặc không nằm trong menu collapse
+    if (!navbarToggler.contains(event.target) && !navbarCollapse.contains(event.target)) {
+        // Nếu menu đang mở, đóng nó
+        if (navbarCollapse.classList.contains('show')) {
+            bsCollapse.hide();
+        }
+    }
+});
 </script>
 
 <style>
