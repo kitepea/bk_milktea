@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* width: 1440px; */
+    margin: auto;
+    margin-top: 100px;
+}
+
+.cart-container {
+    margin-left: 20px;
+    position: relative;
+}
+
+.cart-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center; 
+}
+
+.cart-container {
+    display: flex;
+    align-items: center; 
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.button-styled {
+    background-color: rgb(190, 30, 76); /* Màu nền ban đầu */
+    color: white; /* Màu chữ */
+    border: 2px solid rgb(190, 30, 76); /* Màu viền */
+    padding: 10px 20px; /* Đệm xung quanh chữ */
+    text-align: center; /* Căn chữ ở giữa */
+    text-decoration: none; /* Bỏ gạch chân */
+    display: inline-block; /* Hiển thị dạng khối nội dòng */
+    border-radius: 5px; /* Làm mịn góc */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Hiệu ứng chuyển đổi mượt */
+}
+
+.button-styled:hover {
+    background-color: #ffffff; /* Màu nền khi hover */
+    color: #30271c; /* Màu chữ khi hover */
+    border-color: #ffffff; /* Màu viền khi hover */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 1440px; */
+    height: 177px;
+    background-color: #F59F05;
+    text-align: center;
+
+    font-size: 25px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.h-500 {
+    height: 650px;
+}
+.h-128 {
+    height: 32rem;
+}
+.h-144 {
+    height: 36rem;
+}
+.h-192 {
+    height: 48rem;
+}
+.h-200 {
+    height: 50rem;
+}
+
+.carousel-img {
+    object-fit: cover;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+@media screen and (max-width: 850px) and (min-width: 483.5px) {
+    body {
+        /* width: 1440px; */
+        margin: auto;
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 483.5px) {
+    body {
+        /* width: 1440px; */
+        margin: auto;
+        margin-top: 300px;
+    }
+}

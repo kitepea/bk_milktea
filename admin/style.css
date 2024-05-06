@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* width: 1440px; */
+    margin: auto;
+    margin-top: 100px;
+}
+
+html, body {
+    height: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Chiều cao tối thiểu bằng 100% chiều cao màn hình */
+  }
+
+  footer {
+    margin-top: auto;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 1440px; */
+    height: 177px;
+    background-color: #F59F05;
+    text-align: center;
+
+    font-size: 25px;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+@media screen and (max-width: 850px) and (min-width: 483.5px) {
+    body {
+        /* width: 1440px; */
+        margin: auto;
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 483.5px) {
+    body {
+        /* width: 1440px; */
+        margin: auto;
+        margin-top: 300px;
+    }
+}
