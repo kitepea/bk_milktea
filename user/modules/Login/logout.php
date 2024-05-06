@@ -2,5 +2,4 @@
 session_start();
 session_destroy();
 // Redirect to the login page:
-header('Location: /user/modules/homePage/homePage.php');
-?>
+header('Location: /bk_milktea/user/modules/homePage/homePage.php');

@@ -175,28 +175,28 @@ $conn->close();
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <span class="absolute text-2xl font-semibold text-white sm:text-3xl dark:text-gray-600">First Slide</span>
-                <img src="/user/templates/img/carousel-1.jpg" class="block absolute w-full h-full object-cover" alt="...">
+                <img src="../../templates/img/carousel-1.jpg" class="block absolute w-full h-full object-cover" alt="...">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/user/templates/img/carousel-2.png" class="block absolute w-full h-full object-cover" alt="...">
+                <img src="../../templates/img/carousel-2.png" class="block absolute w-full h-full object-cover" alt="...">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/user/templates/img/carousel-3.png" class="block absolute w-full h-full object-cover" alt="...">
+                <img src="../../templates/img/carousel-3.png" class="block absolute w-full h-full object-cover" alt="...">
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="/user/templates/img/carousel-4.png" class="block absolute w-full h-full object-cover" alt="...">
+              <img src="../../templates/img/carousel-4.png" class="block absolute w-full h-full object-cover" alt="...">
             </div>
 
             <!-- Item 5 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="/user/templates/img/carousel-5.png" class="block absolute w-full h-full object-cover" alt="...">
+              <img src="../../templates/img/carousel-5.png" class="block absolute w-full h-full object-cover" alt="...">
             </div>
              <!-- Item 6 -->
              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="/user/templates/img/carousel-6.png" class="block absolute w-full h-full object-cover" alt="...">
+              <img src="../../templates/img/carousel-6.png" class="block absolute w-full h-full object-cover" alt="...">
             </div>
         </div>
         <!-- Slider indicators -->
@@ -512,7 +512,7 @@ $conn->close();
             </div>
         <div class="row-span-2">
             <a class="navbar-brand" href="../HomePage/homePage.html">
-                <img src="/user/templates/img/logo.png" alt="" class="navigation__logo h-16">
+                <img src="../../templates/img/logo.png" alt="" class="navigation__logo h-16">
             </a>
         </div>
         <div class="hover:underline dark:text-yellow-400">
